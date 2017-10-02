@@ -41,15 +41,15 @@ public class Zadatak2DodavanjeVrednosti {
 
             Roba r3 = new Roba("Voda","Voda za pice",1.4);
             r3.setAvion(a1);
-            robaDao.create(r1);
+            robaDao.create(r3);
 
             Roba r4 = new Roba("Ploce","Drvene ploce",3.4);
             r4.setAvion(a2);
-            robaDao.create(r1);
+            robaDao.create(r4);
 
             Roba r5 = new Roba("Stolica","Plasticna stolica",2.4);
             r5.setAvion(a2);
-            robaDao.create(r1);
+            robaDao.create(r5);
 
             List<Avion> avioni = avionDao.queryForAll();
             for (Avion a:avioni) {
